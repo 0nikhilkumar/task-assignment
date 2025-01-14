@@ -9,6 +9,10 @@ const app = express();
 
 app.use(bodyParser.json());
 
+app.get("/home", (req, res)=> {
+    res.json({message: "OK"});
+});
+
 connectDB();
 
 app.use('/user', userRoutes);
