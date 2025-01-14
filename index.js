@@ -13,7 +13,7 @@ app.get("/home", (req, res)=> {
     res.json({message: "OK"});
 });
 
-connectDB();
+// connectDB();
 
 app.use('/user', userRoutes);
 
